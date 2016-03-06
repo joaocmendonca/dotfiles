@@ -129,7 +129,7 @@ augroup line_return
     au!
         au BufReadPost *
         \ if line("'\"") > 0 && line("'\"") <= line("$") |
-        \   execute 'normal! g`"zvzz' | 
+        \   execute 'normal! g`"zvzz' |
         \ endif
 augroup END
 
@@ -153,7 +153,7 @@ let g:netrw_liststyle=3
 let g:netrw_altv=1
 let g:netrw_winsize=60
 
-nnoremap ; :
-nnoremap : ;
+" nnoremap ; :
+" nnoremap : ;
 
 execute pathogen#infect()
